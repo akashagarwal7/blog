@@ -36,7 +36,7 @@ ssh -R 80:localhost:80 user@10.2.3.4
 If you're running multiple servers, for instance, an SPA React server on port 80 and a backend Node.js server on port 8000, you would want to forward multiple ports by issuing the command:
 
 ```sh
-ssh -R 80:localhost:80 8000:localhost:8000 user@10.2.3.4.
+ssh -R 80:localhost:80 8000:localhost:8000 user@10.2.3.4
 ```
 
 Note: Make sure that the React application is configured to access http://10.2.3.4 and not http://localhost for your remote peer to use the application correctly.
