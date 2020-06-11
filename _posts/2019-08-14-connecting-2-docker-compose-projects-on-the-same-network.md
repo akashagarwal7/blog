@@ -10,7 +10,7 @@ comments: true
 
 Lately, I have been loving using Docker for almost everything. Recently at work, I needed a docker-compose project to join an existing one's network, mainly to access the existing project's MySQL instance. If you're looking for the same, look no further!
 
-## Project name
+## Specify project name
 
 First, you would want to setup a project name for your docker-compose project, the project whose network you would want other project(s) to join; instead of docker setting up one based on the folder the compose file exists in. This step is optional, but I recommend doing this. To set a project name, all you need to do is:
 
