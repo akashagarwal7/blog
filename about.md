@@ -9,4 +9,4 @@ My name is Akash Agarwal. I have the following qualities:
 - I rock a great beard.
 - I take extreme pride in my work and care about doing the right thing.
 
-In case you need more (_haha_) -- please find my [cover letter](/about/main/cl) and [resume](/about/main/resume).
+In case you need more (_haha_) -- please find my [cover letter](main/cl) and [resume](main/resume).
