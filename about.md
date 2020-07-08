@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Why you'd want to hire me to help you achieve your goals
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Akash Agarwal. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I rock a great beard.
+- I take extreme pride in my work and care about doing the right thing.
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+In case you need more (_haha_) -- please find my [cover letter](/about/main/cl) and [resume](/about/main/resume).
