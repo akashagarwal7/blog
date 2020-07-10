@@ -1,13 +1,27 @@
-{% if site.navbar-links or page.url != "/" %}
-  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% endif %}">
-{% endif %}
+  {% if site.navbar-links or page.url != "/" %}
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom {% if page.nav-short %}top-nav-short-permanent{% endif %}">
+  {% endif %}
 
-  {% if page.url != "/" %}
-    {%- if site.title-img -%}
-      <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
-    {%- elsif site.title -%}
-      <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
-    {%- endif -%}
+  {% if jekyll.environment == "netlify" %}
+
+    {% if page.url != "/" %}
+      {%- if site.title-img -%}
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.baseurl }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
+      {%- elsif site.title -%}
+        <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.title }}</a>
+      {%- endif -%}
+    {% endif %}
+
+  {% else %}
+
+    {% if page.url != "/" %}
+      {%- if site.title-img -%}
+        <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img alt="{{ site.title }} Logo" src="{{ site.title-img }}"/></a>
+      {%- elsif site.title -%}
+        <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a>
+      {%- endif -%}
+    {% endif %}
+
   {% endif %}
 
   {% if site.navbar-links %}
@@ -39,22 +53,46 @@
     </div>
   {% endif %}
 
-  {% if page.image and (layout.show-avatar or page.show-avatar) %}
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a href="{{ '' | absolute_url }}">
-          <img alt="Navbar avatar" class="avatar-img" src="{{ page.image | relative_url }}" />
-        </a>
+  {% if jekyll.environment == "netlify" %}
+
+    {% if page.image and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a href="{{ '' | absolute_url }}">
+            <img alt="Navbar avatar" class="avatar-img" src="{{ page.image | relative_url }}" />
+          </a>
+        </div>
       </div>
-    </div>
-  {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-    <div class="avatar-container">
-      <div class="avatar-img-border">
-        <a href="{{ '' | absolute_url }}">
-          <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
-        </a>
+    {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a href="{{ '' | absolute_url }}">
+            <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+          </a>
+        </div>
       </div>
-    </div>
+    {% endif %}
+
+  {% else %}
+
+    {% if page.image and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a href="{{ '' | absolute_url }}">
+            <img alt="Navbar avatar" class="avatar-img" src="{{ page.image | relative_url }}" />
+          </a>
+        </div>
+      </div>
+    {% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a href="{{ '' | absolute_url }}">
+            <img alt="Navbar avatar" class="avatar-img" src="{{ site.avatar | relative_url }}" />
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
   {% endif %}
 
 </nav>
