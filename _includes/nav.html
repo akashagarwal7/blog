@@ -9,10 +9,11 @@
       <a class="navbar-brand" href="{{ site.baseurl }}">{{ site.title }}</a>
     {%- endif -%}
   {% endif %}
-  absolute_url: {{ '' | absolute_url }}
-  absolute_url with slash: {{ '/' | absolute_url }}
-  base_url: {{ '' | base_url }}
-  site.baseurl: {{ site.baseurl }}
+  absolute_url: {{ '' | absolute_url }},
+  absolute_url with slash: {{ '/' | absolute_url }},
+  base_url: {{ '' | base_url }},
+  site.baseurl: {{ site.baseurl }},
+  site.url: {{ site.url }}
 
   {% if site.navbar-links %}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
