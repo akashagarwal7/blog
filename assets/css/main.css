@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 1.125rem;
-  color: #404040;
+  color: #ddd;
   position: relative;
   background-color: {{ site.page-col | default: "#FFFFFF" }};
   {% if site.page-img %}
@@ -447,7 +447,7 @@ footer .footer-custom-content {
 
 .post-preview a {
   text-decoration: none;
-  color: #404040;
+  color: #ddd;
 }
 
 .post-preview a:focus,
