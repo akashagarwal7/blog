@@ -6,6 +6,7 @@ title: Understanding the difference between SSH local vs remote port-forwarding
 # gh-badge: [star, fork, follow]
 tags: [ssh]
 comments: true
+show-avatar: false
 ---
 
 I had been familiar with the existence of SSH port-forwarding for a while, but it was only last year when I completely understood the difference between local and remote port-forwarding, and which is appropriate when.

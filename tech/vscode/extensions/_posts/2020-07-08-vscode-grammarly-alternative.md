@@ -6,6 +6,7 @@ title: LanguageTool Grammarly alternative for Visual Studio Code with LaTeX supp
 # gh-badge: [star, fork, follow]
 tags: [vscode-extensions]
 comments: true
+show-avatar: false
 ---
 
 Lately, my life has been revolving around VSCode and Markdown. From writing this blog, updating my resume in Markdown and using Pandoc to convert it into a PDF format, to the usual development stuff as well as taking notes, I rely on VSCode for almost everything -- and I prefer it that way.

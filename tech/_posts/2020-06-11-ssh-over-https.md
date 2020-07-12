@@ -6,6 +6,7 @@ title: How to enable SSH access to a Git server on a remote machine behind a fir
 # gh-badge: [star, fork, follow]
 tags: [ssh]
 comments: true
+show-avatar: false
 ---
 
 Let’s consider a scenario -- you are deploying a software at an organisation’s development server (let’s call it Machine R). Depending upon the organisation, it is possible that firewall rules prohibit outgoing connections to port 22 (default for SSH) for obvious security reasons. In such a scenario, the usual option is to clone the required repositories over HTTPS. If the repositories are private, you would be required to enter your username and password every time you want to pull changes from remote. While doing so once or twice a week for a single repository may seek ok to many, it can quickly become tedious. Let’s see how you can remedy this!

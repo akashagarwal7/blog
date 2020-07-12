@@ -6,6 +6,7 @@ title: Connecting 2 Docker Compose projects on the same network
 # gh-badge: [star, fork, follow]
 tags: [docker, docker-compose]
 comments: true
+show-avatar: false
 ---
 
 Lately, I have been loving using Docker for almost everything. Recently at work, I needed a docker-compose project to join an existing one's network, mainly to access the existing project's MySQL instance. If you're looking for the same, look no further!
